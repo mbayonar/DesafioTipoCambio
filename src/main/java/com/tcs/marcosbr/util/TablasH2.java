@@ -61,8 +61,6 @@ public class TablasH2 {
         fechaActual = SistemaUtil.obtenerFechaComoString(new Date(), "yyyy/MM/dd");
 //        fechaActual = SistemaUtil.obtenerFechaComoString(SistemaUtil.agregarDias(new Date(), 1), "yyyy/MM/dd");
 
-        System.out.println("\n\n\nFECHA: " + fechaActual + "\n\n\n");
-
         int[] monedas = {1, 2, 3}; // ID de las monedas
         Double[] precioCompra = {1.1284, 1.0, 3.996};
         Double[] precioVenta = {1.1285, 1.0, 4.001};
