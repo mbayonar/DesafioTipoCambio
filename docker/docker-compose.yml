@@ -2,11 +2,10 @@ version: '3.1'
 services:
 
   tipoCambio-back:
-    image: maven:3.6.3-jdk-8
-    command: mvn spring-boot:run
+    image: openjdk:8
+    command: java -jar BackTipoCambio-0.0.1-SNAPSHOT.jar
     ports:
       - 8081:8091
     volumes:
-      - ../BackTipoCambio:/usr/src/tipocambio:rw
-      - ~/.docker/mvn:/root/.m2
+      - ./:/usr/src/tipocambio:rw
     working_dir: /usr/src/tipocambio
